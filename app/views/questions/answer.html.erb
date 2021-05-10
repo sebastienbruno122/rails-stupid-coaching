@@ -1,0 +1,14 @@
+<div class="banner">
+<h1>Stupid Coaching</h1>
+<% @question = params[:question] %>
+<h3><%= @question %></h3>
+<p>-You</p>
+<% if @question == "I am going to work" %>
+    <h3><%="Great!"%></h3>
+<% elsif @question == "I am going to work?"  %>
+    <h3><%="Silly question, get dressed and go to work!"%></h3>
+<% else  %>
+    <h3><%="I don't care, get dressed and go to work!"%></h3>
+<% end %>
+<p><%="-Your coach"%></p>
+</div>
